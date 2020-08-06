@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/menus/selecionarNivel.unity
     guid: d994e870734addb428233d7ba21b8358
   - enabled: 1
-    path: Assets/Scenes/nivel2/nivel2-1.unity
+    path: Assets/Scenes/nivel2(Arturo)/nivel2-1.unity
     guid: daa10298e093fcf4187ab1a205d3e67a
   m_configObjects: {}
