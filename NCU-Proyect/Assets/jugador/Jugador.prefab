@@ -280,15 +280,15 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 706999822198549660}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.007029295, y: 1.2928528}
+  m_Offset: {x: -0.018281221, y: 1.3211987}
   serializedVersion: 2
-  m_Radius: 1.2876505
+  m_Radius: 1.3268197
 --- !u!50 &706999822198549648
 Rigidbody2D:
   serializedVersion: 4
@@ -340,13 +340,13 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 706999822198549660}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 1.44}
+  m_Offset: {x: 0, y: 0.05596304}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -357,5 +357,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.52, y: 2.88}
+  m_Size: {x: 2.52, y: 0.11192608}
   m_EdgeRadius: 0

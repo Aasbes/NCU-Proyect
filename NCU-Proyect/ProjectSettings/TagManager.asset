@@ -6,6 +6,7 @@ TagManager:
   tags:
   - jugador
   - suelo
+  - enemigo
   layers:
   - Default
   - TransparentFX

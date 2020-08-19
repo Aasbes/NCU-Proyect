@@ -5,7 +5,8 @@ using System.Security.Cryptography;
 using UnityEngine;
 //control del personaje
 public class ControlJugador : MonoBehaviour
-{   
+{
+    
     //movimiento personaje
     public Transform pos;
     public float speed = 0.5f;
@@ -28,7 +29,7 @@ public class ControlJugador : MonoBehaviour
     
     void Start()
     {
-    
+        anim.SetBool("saltar", true);
     }
     // Update is called once per frame
     void Update()
