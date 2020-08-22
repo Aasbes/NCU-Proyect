@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Security.Cryptography;
@@ -23,20 +24,41 @@ public class ControlJugador : MonoBehaviour
     public Transform DisparoDerecha;
     public Transform DisparoIzquierda;
     public GameObject balaPrefab;
+    //vida y daño
+    public GameObject barraVidaPersonaje;
+    
 
+    public static ControlJugador instance;  
+    void Awake()
+    {
 
+        if (instance == null)
+        {
+           
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+            
 
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+           
+        }
+        
+        
+    }
     
     void Start()
     {
+       
         anim.SetBool("saltar", true);
     }
     // Update is called once per frame
     void Update()
     {
 
-
-
+       
         
         //avance a la derecha
         if (Input.GetKey(KeyCode.D))
@@ -86,7 +108,7 @@ public class ControlJugador : MonoBehaviour
     }
 
     
-    //verifica si toca el suelo
+    //verifica lo que toca el jugador
     public void OnCollisionEnter2D(Collision2D tocando)
     {
         if (tocando.gameObject.tag == "suelo")
@@ -94,8 +116,32 @@ public class ControlJugador : MonoBehaviour
             puedeSaltar = true;
             anim.SetBool("saltar", false);
         }
-       
+        //daño recibido
+        if (tocando.gameObject.tag == "enemigo" )
+        {
 
+            Color color = new Color(255 / 255f, 106 / 255f, 0 / 255f);
+            sprit.color = color;
+
+            barraVidaPersonaje.SendMessage("dañoRecibido", 15);
+
+
+        }
+        if (tocando.gameObject.tag == "eliminacion")
+        {
+            pos.position = new Vector3(0, 0, 0);
+            barraVidaPersonaje.SendMessage("dañoRecibido", 25);
+        }
+
+        if (tocando.gameObject.tag == "recolectable")
+        {
+            Destroy(tocando.gameObject);
+
+        }
+        if (tocando.gameObject.tag == "reinicioPosicion")
+        {
+            pos.position = new Vector3(0, 0, 0);
+        }
 
 
 
@@ -111,6 +157,11 @@ public class ControlJugador : MonoBehaviour
             puedeSaltar = false;
             anim.SetBool("saltar", true);
         }
+        if (tocando.gameObject.tag == "enemigo")
+        {
+            sprit.color = Color.white;
+        }
+
     }
 
 
@@ -140,6 +191,11 @@ public class ControlJugador : MonoBehaviour
             PlayerShooting(DisparoIzquierda);
         }
     }
+
+
+   
+
+
 
 }
 

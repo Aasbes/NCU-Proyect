@@ -7,6 +7,9 @@ TagManager:
   - jugador
   - suelo
   - enemigo
+  - eliminacion
+  - recolectable
+  - reinicioPosicion
   layers:
   - Default
   - TransparentFX
@@ -43,4 +46,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: interface
+    uniqueID: 3239828987
     locked: 0

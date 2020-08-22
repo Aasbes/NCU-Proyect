@@ -9,7 +9,7 @@ public class Enemigo1 : MonoBehaviour
     public float moveSpeed;
     public GameObject[] wayPoints;
 
-    int nextWaypoint = 1;
+    int nextWaypoint = 0;
     float distToPoint;
     public SpriteRenderer sprit;
 
@@ -48,10 +48,15 @@ public class Enemigo1 : MonoBehaviour
     void ChooseNextWaypoint()
     {
         nextWaypoint++;
-        sprit.flipX = false;
+       
+        //sprit.flipX = false;
         if (nextWaypoint % 2 == 0)
         {
             sprit.flipX = true;
+        }
+        else
+        {
+            sprit.flipX = false;
         }
 
 

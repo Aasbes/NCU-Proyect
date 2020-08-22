@@ -333,6 +333,7 @@ MonoBehaviour:
   DisparoIzquierda: {fileID: 706999822083371509}
   balaPrefab: {fileID: 6208319774445449786, guid: c87c1804727b2754ca793018a01e1948,
     type: 3}
+  barraVidaPersonaje: {fileID: 0}
 --- !u!61 &3540146019722157213
 BoxCollider2D:
   m_ObjectHideFlags: 0
