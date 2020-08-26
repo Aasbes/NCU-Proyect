@@ -26,15 +26,15 @@ public class ControlJugador : MonoBehaviour
     public GameObject balaPrefab;
     //vida y daño
     public GameObject barraVidaPersonaje;
-    
-
+    /*
     public static ControlJugador instance;  
     void Awake()
     {
-
-        if (instance == null)
+        
+        
+        if (instance == null  )
         {
-           
+            
             instance = this;
             DontDestroyOnLoad(gameObject);
             
@@ -48,17 +48,16 @@ public class ControlJugador : MonoBehaviour
         
         
     }
-    
+    */
     void Start()
     {
-       
+        
         anim.SetBool("saltar", true);
     }
     // Update is called once per frame
     void Update()
     {
 
-       
         
         //avance a la derecha
         if (Input.GetKey(KeyCode.D))
