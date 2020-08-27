@@ -11,7 +11,6 @@ public class Menu : MonoBehaviour
     public bool canvasActivo = false;
     Canvas canvas;
     public GameObject configuracion;
-  
     
     // Start is called before the first frame update
     void Start()
@@ -41,8 +40,11 @@ public class Menu : MonoBehaviour
         Time.timeScale = 0;
 
         canvas.enabled = true;
-        
-
+       /*
+        activo = !activo;
+        canvas.enabled = activo;
+        Time.timeScale = (activo) ? 0 : 1f;
+       */
 
     }
     public void configuraciones() 
@@ -67,10 +69,12 @@ public class Menu : MonoBehaviour
         
         
         SceneManager.LoadScene("menuInicial");
+        
         PlayerPrefs.SetInt("carpeta", 0);
         PlayerPrefs.SetInt("moneda", 0);
         PlayerPrefs.SetInt("llave", 0);
-        
+        PlayerPrefs.SetFloat("vida", 100);
+        //PlayerPrefs.SetFloat("vida", vidaMax);
         Time.timeScale = 1;
 
     }

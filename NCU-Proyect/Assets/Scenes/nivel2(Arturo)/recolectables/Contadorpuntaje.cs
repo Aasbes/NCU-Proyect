@@ -9,10 +9,11 @@ public class Contadorpuntaje : MonoBehaviour
     public TextMeshProUGUI cantidadCarpetas;
     public TextMeshProUGUI cantidadmonedas;
     public TextMeshProUGUI cantidadLlaves;
+   
     int cantidadC;
     int cantidadM;
     int cantidadL;
-
+    float vida;
     
     void Awake()
     {
@@ -75,11 +76,32 @@ public class Contadorpuntaje : MonoBehaviour
             }
             else
             {
+                if (nombre == "MasVida")
+                {
+                    vida = PlayerPrefs.GetFloat("vida") + 20;
+                    //barraVidaPersonaje.SendMessage("dañoRecibido",-10);
+                    //float nuevaVida = PlayerPrefs.GetFloat("vida")+10;
+                    if (vida > 100)
+                    {
+                        PlayerPrefs.SetFloat("vida", 100);
+                    }
+                    else
+                    {
+                        PlayerPrefs.SetFloat("vida", vida);
+                    }
+                    
+                    //salud.transform.localScale = new Vector2(vida / vidaMax, 1);
+                }
+                else
+                {
 
-                cantidadL = PlayerPrefs.GetInt("llave", 0)+ recolectado;
-                PlayerPrefs.SetInt("llave", cantidadL);
-                cantidadLlaves.text = cantidadL.ToString()+" /4";
 
+
+
+                    cantidadL = PlayerPrefs.GetInt("llave", 0) + recolectado;
+                    PlayerPrefs.SetInt("llave", cantidadL);
+                    cantidadLlaves.text = cantidadL.ToString() + " /4";
+                }
             }
             
         }
