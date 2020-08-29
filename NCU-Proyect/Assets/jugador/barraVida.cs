@@ -22,7 +22,7 @@ public class barraVida : MonoBehaviour
     void Update()
     {
         
-        if (vida <= 0)
+        if (vida <= 0 && PlayerPrefs.GetInt("cooperativo") == 1)
         {
             PlayerPrefs.SetFloat("vida", vidaMax);
             SceneManager.LoadScene("gameover");

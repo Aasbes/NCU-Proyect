@@ -57,7 +57,7 @@ public class Contadorpuntaje : MonoBehaviour
         cantidadLlaves.text = PlayerPrefs.GetInt("llave", 0).ToString() + " /4";
     }
 
-    public void ChangeScore(int recolectado, string nombre)
+    public void ChangeScore(int recolectado, string nombre,string jugador)
     {
         if (nombre == "carpeta")
         {
@@ -78,19 +78,39 @@ public class Contadorpuntaje : MonoBehaviour
             {
                 if (nombre == "MasVida")
                 {
-                    vida = PlayerPrefs.GetFloat("vida") + 20;
-                    //barraVidaPersonaje.SendMessage("dañoRecibido",-10);
-                    //float nuevaVida = PlayerPrefs.GetFloat("vida")+10;
-                    if (vida > 100)
+                    if (jugador.Equals("jugador1"))
                     {
-                        PlayerPrefs.SetFloat("vida", 100);
+                        vida = PlayerPrefs.GetFloat("vida") + 20;
+                        //barraVidaPersonaje.SendMessage("dañoRecibido",-10);
+                        //float nuevaVida = PlayerPrefs.GetFloat("vida")+10;
+                        if (vida > 100)
+                        {
+                            PlayerPrefs.SetFloat("vida", 100);
+                        }
+                        else
+                        {
+                            PlayerPrefs.SetFloat("vida", vida);
+                        }
+
+
+                        //salud.transform.localScale = new Vector2(vida / vidaMax, 1);
+
                     }
-                    else
+                    else if (jugador.Equals("jugador2"))
                     {
-                        PlayerPrefs.SetFloat("vida", vida);
+                        vida = PlayerPrefs.GetFloat("vida2") + 20;
+                        //barraVidaPersonaje.SendMessage("dañoRecibido",-10);
+                        //float nuevaVida = PlayerPrefs.GetFloat("vida")+10;
+                        if (vida > 100)
+                        {
+                            PlayerPrefs.SetFloat("vida2", 100);
+                        }
+                        else
+                        {
+                            PlayerPrefs.SetFloat("vida2", vida);
+                        }
                     }
-                    
-                    //salud.transform.localScale = new Vector2(vida / vidaMax, 1);
+
                 }
                 else
                 {

@@ -4,10 +4,23 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Security.Cryptography;
 using UnityEngine;
+using UnityEngine.UI;
 //control del personaje
 public class ControlJugador : MonoBehaviour
 {
-    
+    public int numeroJugador;
+    //vida Jugador
+    public Image salud;
+    public float vida, vidaMax = 100f;
+    //sonidos
+    private AudioSource audioPlayer;
+    public AudioClip muerte;
+    public AudioClip SonidoDisparo;
+    public AudioClip grito;
+    public AudioClip jump;
+    public AudioClip recoleccion;
+    //controles
+    public String saltar, izquierda, derecha, disparar;
     //movimiento personaje
     public Transform pos;
     public float speed = 0.5f;
@@ -17,7 +30,7 @@ public class ControlJugador : MonoBehaviour
 
     //sprites animacion
     public SpriteRenderer sprit;
-    //public SpriteRenderer sprit2;
+   // public SpriteRenderer sprit2;
     public Animator anim;
 
     //disparo
@@ -28,6 +41,7 @@ public class ControlJugador : MonoBehaviour
     public GameObject barraVidaPersonaje;
     /*
     public static ControlJugador instance;  
+    
     void Awake()
     {
         
@@ -36,7 +50,7 @@ public class ControlJugador : MonoBehaviour
         {
             
             instance = this;
-            DontDestroyOnLoad(gameObject);
+            //DontDestroyOnLoad(gameObject);
             
 
         }
@@ -53,33 +67,62 @@ public class ControlJugador : MonoBehaviour
     {
         
         anim.SetBool("saltar", true);
+        audioPlayer = GetComponent<AudioSource>();
+
+        //
+        if (numeroJugador == 1)
+        {
+            vida = PlayerPrefs.GetFloat("vida");
+            //vida = vidaMax;
+            salud.transform.localScale = new Vector2(PlayerPrefs.GetFloat("vida") / vidaMax, 1);
+
+        }
+        else
+        {
+            vida = PlayerPrefs.GetFloat("vida2");
+            //vida = vidaMax;
+            salud.transform.localScale = new Vector2(PlayerPrefs.GetFloat("vida2") / vidaMax, 1);
+
+        }
+        
     }
     // Update is called once per frame
     void Update()
     {
+        if (numeroJugador == 1)
+        {
+            vida = PlayerPrefs.GetFloat("vida");
+            salud.transform.localScale = new Vector2(vida / vidaMax, 1);
+            //avance a la derecha
+        }
+        else
+        {
+            vida = PlayerPrefs.GetFloat("vida2");
+            salud.transform.localScale = new Vector2(vida / vidaMax, 1);
+            //avance a la derecha
 
-        
-        //avance a la derecha
-        if (Input.GetKey(KeyCode.D))
+        }
+
+        if (Input.GetKey(derecha))
         {
             
             pos.position += new Vector3(1f, 0, 0) * speed * Time.deltaTime;
             sprit.flipX = false;
             anim.SetBool("velocidad", true);
-            //sprit2.flipY = false;
+            //sprit2.flipX = false;
 
             
 
         }
         else
         {   //avance a la izquierda
-            if (Input.GetKey(KeyCode.A))
+            if (Input.GetKey(izquierda))
             {
                 
                 pos.position += new Vector3(-1f, 0, 0) * speed * Time.deltaTime;
                 sprit.flipX = true;
                 anim.SetBool("velocidad", true);
-                //sprit2.flipY= true;
+                //sprit2.flipX= true;
                 
                 
             }
@@ -91,8 +134,10 @@ public class ControlJugador : MonoBehaviour
             }
         }
         //salto
-        if (Input.GetKeyDown(KeyCode.W) && puedeSaltar == true)
+        if (Input.GetKeyDown(saltar) && puedeSaltar == true)
         {
+            audioPlayer.clip = jump;
+            audioPlayer.Play();
             rbd.AddForce(Vector2.up * salto, ForceMode2D.Impulse);
             //puedeSaltar = false;
             //anim.SetBool("saltar", true);
@@ -121,21 +166,74 @@ public class ControlJugador : MonoBehaviour
 
             Color color = new Color(255 / 255f, 106 / 255f, 0 / 255f);
             sprit.color = color;
+            rbd.AddForce(Vector2.up * 15, ForceMode2D.Impulse);
 
-            barraVidaPersonaje.SendMessage("dañoRecibido", 15);
 
+            //barraVidaPersonaje.SendMessage("dañoRecibido", 15);
+            dañoRecibido(15);
+            ////////////////
+            if (vida <= 0)
+            {
+
+                audioPlayer.clip = muerte;
+                audioPlayer.Play();
+
+                if (numeroJugador == 1)
+                {
+                    PlayerPrefs.SetFloat("vida", vida);
+                    //salud.transform.localScale = new Vector2(vida / vidaMax, 1);
+                    //avance a la derecha
+                }
+                else
+                {
+                    PlayerPrefs.SetFloat("vida2", vida);
+                    //salud.transform.localScale = new Vector2(vida / vidaMax, 1);
+                    //avance a la derecha
+
+                }
+
+            }
+            else
+            {
+                audioPlayer.clip = grito;
+                audioPlayer.Play();
+            }
+            
 
         }
         if (tocando.gameObject.tag == "eliminacion")
         {
             pos.position = new Vector3(0, 0, 0);
-            barraVidaPersonaje.SendMessage("dañoRecibido", 25);
+            //barraVidaPersonaje.SendMessage("dañoRecibido", 25);
+            dañoRecibido(25);
+            //barraVidaPersonaje.SendMessage("dañoRecibido", 15);
+            if (vida <= 0)
+            {
+
+                audioPlayer.clip = muerte;
+                audioPlayer.Play();
+               
+                if (numeroJugador == 1)
+                {
+                    PlayerPrefs.SetFloat("vida", vida);
+                    //salud.transform.localScale = new Vector2(vida / vidaMax, 1);
+                    //avance a la derecha
+                }
+                else
+                {
+                    PlayerPrefs.SetFloat("vida2", vida);
+                    //salud.transform.localScale = new Vector2(vida / vidaMax, 1);
+                    //avance a la derecha
+
+                }
+            }
         }
 
         if (tocando.gameObject.tag == "recolectable")
         {
             Destroy(tocando.gameObject);
-
+            audioPlayer.clip = recoleccion;
+            audioPlayer.Play();
         }
         if (tocando.gameObject.tag == "reinicioPosicion")
         {
@@ -169,10 +267,11 @@ public class ControlJugador : MonoBehaviour
     public void PlayerShooting(Transform origen)
     {
         //if (Input.GetButtonDown("Fire1"))
-        if    (Input.GetKeyDown(KeyCode.E))
+        if    (Input.GetKeyDown(disparar))
         {
             Instantiate(balaPrefab, origen.position,origen.rotation);
-            
+            audioPlayer.clip = SonidoDisparo;
+            audioPlayer.Play();
         }
 
 
@@ -191,8 +290,36 @@ public class ControlJugador : MonoBehaviour
         }
     }
 
+    public void dañoRecibido(float daño)
+    {
+        vida = Mathf.Clamp(vida - daño, 0f, vidaMax);
+        /*
+        if (vida > 100)
+        {
+            PlayerPrefs.SetFloat("vida2", vidaMax);
+        }
+        else
+        {
 
-   
+            PlayerPrefs.SetFloat("vida2", vida);
+        }
+        //salud.transform.localScale = new Vector2(vida / vidaMax, 1);
+        */
+        if (numeroJugador == 1)
+        {
+            PlayerPrefs.SetFloat("vida",vida);
+            //salud.transform.localScale = new Vector2(vida / vidaMax, 1);
+            //avance a la derecha
+        }
+        else
+        {
+            PlayerPrefs.SetFloat("vida2",vida);
+            //salud.transform.localScale = new Vector2(vida / vidaMax, 1);
+            //avance a la derecha
+
+        }
+    }
+
 
 
 

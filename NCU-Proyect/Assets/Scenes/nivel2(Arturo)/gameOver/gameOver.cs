@@ -6,9 +6,12 @@ using TMPro;
 
 public class gameOver : MonoBehaviour
 {
+
+    public string tipoPantalla;
     public TextMeshProUGUI cantidadCarpetas;
     public TextMeshProUGUI cantidadmonedas;
     public TextMeshProUGUI cantidadLlaves;
+   
     int cantidadC;
     int cantidadM;
     int cantidadL;
@@ -20,17 +23,21 @@ public class gameOver : MonoBehaviour
    
     void Start()
     {
-        canvas = GetComponent<Canvas>();
-        canvas.enabled = true;
+        
+            canvas = GetComponent<Canvas>();
+            canvas.enabled = true;
 
-        cantidadC=PlayerPrefs.GetInt("carpeta", 0);
-        cantidadCarpetas.text = cantidadC.ToString()+"carpetas";
+            cantidadC = PlayerPrefs.GetInt("carpeta", 0);
+            cantidadCarpetas.text = cantidadC.ToString() + "carpetas";
 
-        cantidadM = PlayerPrefs.GetInt("moneda", 0);
-        cantidadmonedas.text = cantidadM.ToString()+"monedas";
+            cantidadM = PlayerPrefs.GetInt("moneda", 0);
+            cantidadmonedas.text = cantidadM.ToString() + "monedas";
 
-        cantidadL = PlayerPrefs.GetInt("llave", 0);
-        cantidadLlaves.text = cantidadL.ToString()+"llaves";
+            cantidadL = PlayerPrefs.GetInt("llave", 0);
+            cantidadLlaves.text = cantidadL.ToString() + "llaves";
+
+
+        
 
 
 
@@ -42,10 +49,7 @@ public class gameOver : MonoBehaviour
     {
         
 
-        PlayerPrefs.SetInt("carpeta", 0);
-        PlayerPrefs.SetInt("moneda", 0);
-        PlayerPrefs.SetInt("llave", 0);
-        PlayerPrefs.SetFloat("vida",100);
+       
     }
 
 
@@ -54,6 +58,23 @@ public class gameOver : MonoBehaviour
     public void IrMenu()
     {
         SceneManager.LoadScene("menuInicial");
+        int suma = 0;
+        if (tipoPantalla.Equals("nivelTerminado"))
+        {
+            suma = PlayerPrefs.GetInt("TotalCarpeta") + PlayerPrefs.GetInt("carpeta");
+            PlayerPrefs.SetInt("TotalCarpeta", suma);
+            suma = PlayerPrefs.GetInt("TotalMoneda") + PlayerPrefs.GetInt("moneda");
+            PlayerPrefs.SetInt("TotalMoneda", suma);
+            suma = PlayerPrefs.GetInt("TotalLLave") + PlayerPrefs.GetInt("llave");
+            PlayerPrefs.SetInt("TotalLLave", suma);
+
+        }
+        PlayerPrefs.SetInt("carpeta", 0);
+        PlayerPrefs.SetInt("moneda", 0);
+        PlayerPrefs.SetInt("llave", 0);
+        PlayerPrefs.SetFloat("vida", 100);
+        PlayerPrefs.SetFloat("vida2", 100);
+
 
     }
 

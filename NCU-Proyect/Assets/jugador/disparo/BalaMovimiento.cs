@@ -7,15 +7,10 @@ public class BalaMovimiento: MonoBehaviour
 {
     public GameObject player;
 
-
+    
     private Rigidbody2D rbd;
     public float velocidad;
     public float duracion;//duracion objeto en pantalla
-
-
-    
-
-
 
     // Start is called before the first frame update
 
@@ -24,8 +19,8 @@ public class BalaMovimiento: MonoBehaviour
         rbd = GetComponent<Rigidbody2D>();
 
         player = GameObject.FindGameObjectWithTag("jugador");
-
-
+        
+        
 
 
 
