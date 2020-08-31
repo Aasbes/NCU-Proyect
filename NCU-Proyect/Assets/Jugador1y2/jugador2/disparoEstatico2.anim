@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: animacion_correr
+  m_Name: disparoEstatico2
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,16 +20,7 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 1977799917850880030, guid: 2bd8bbe4d6dabda4fbd1bf7bfb725567,
-        type: 3}
-    - time: 0.13333334
-      value: {fileID: -5722533827626279761, guid: 2bd8bbe4d6dabda4fbd1bf7bfb725567,
-        type: 3}
-    - time: 0.26666668
-      value: {fileID: 2181676834118408546, guid: 2bd8bbe4d6dabda4fbd1bf7bfb725567,
-        type: 3}
-    - time: 0.4
-      value: {fileID: -5722533827626279761, guid: 2bd8bbe4d6dabda4fbd1bf7bfb725567,
+      value: {fileID: 2954586550634941169, guid: aaa395c6bb51fad41a0260c7492b34f2,
         type: 3}
     attribute: m_Sprite
     path: 
@@ -50,16 +41,13 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 1977799917850880030, guid: 2bd8bbe4d6dabda4fbd1bf7bfb725567, type: 3}
-    - {fileID: -5722533827626279761, guid: 2bd8bbe4d6dabda4fbd1bf7bfb725567, type: 3}
-    - {fileID: 2181676834118408546, guid: 2bd8bbe4d6dabda4fbd1bf7bfb725567, type: 3}
-    - {fileID: -5722533827626279761, guid: 2bd8bbe4d6dabda4fbd1bf7bfb725567, type: 3}
+    - {fileID: 2954586550634941169, guid: aaa395c6bb51fad41a0260c7492b34f2, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.4166667
+    m_StopTime: 0.016666668
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

@@ -11,6 +11,7 @@ TagManager:
   - recolectable
   - reinicioPosicion
   - jugador2
+  - disparoJugador
   layers:
   - Default
   - TransparentFX
