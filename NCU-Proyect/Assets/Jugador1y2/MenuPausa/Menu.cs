@@ -102,6 +102,13 @@ public class Menu : MonoBehaviour
         Time.timeScale = 1;
 
     }
+
+    public void SalirJuego()
+    {
+
+        Application.Quit();
+        print("juego cerrado");
+    }
    
 
 

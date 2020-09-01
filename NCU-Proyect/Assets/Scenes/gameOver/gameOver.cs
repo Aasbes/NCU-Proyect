@@ -28,13 +28,13 @@ public class gameOver : MonoBehaviour
         if (tipoPantalla.Equals("juegoCompletado"))
         {
             cantidadC = PlayerPrefs.GetInt("TotalCarpeta", 0);
-            cantidadCarpetas.text = cantidadC.ToString() + "carpetas";
+            cantidadCarpetas.text = cantidadC.ToString() ;
 
             cantidadM = PlayerPrefs.GetInt("TotalMoneda", 0);
-            cantidadmonedas.text = cantidadM.ToString() + "monedas";
+            cantidadmonedas.text = cantidadM.ToString() ;
 
             cantidadL = PlayerPrefs.GetInt("TotalLLave", 0);
-            cantidadLlaves.text = cantidadL.ToString() + "llaves";
+            cantidadLlaves.text = cantidadL.ToString() ;
 
 
             PlayerPrefs.SetInt("TotalCarpeta", 0);
@@ -55,25 +55,25 @@ public class gameOver : MonoBehaviour
             PlayerPrefs.SetInt("TotalLLave", PlayerPrefs.GetInt("TotalLLave") + PlayerPrefs.GetInt("llave"));
 
             cantidadC = PlayerPrefs.GetInt("carpeta", 0);
-            cantidadCarpetas.text = cantidadC.ToString() + "carpetas";
+            cantidadCarpetas.text = cantidadC.ToString() ;
 
             cantidadM = PlayerPrefs.GetInt("moneda", 0);
-            cantidadmonedas.text = cantidadM.ToString() + "monedas";
+            cantidadmonedas.text = cantidadM.ToString() ;
 
             cantidadL = PlayerPrefs.GetInt("llave", 0);
-            cantidadLlaves.text = cantidadL.ToString() + "llaves";
+            cantidadLlaves.text = cantidadL.ToString() ;
 
         }
         if (tipoPantalla.Equals("GameOver"))
         {
             cantidadC = PlayerPrefs.GetInt("carpeta", 0);
-            cantidadCarpetas.text = cantidadC.ToString() + "carpetas";
+            cantidadCarpetas.text = cantidadC.ToString() ;
 
             cantidadM = PlayerPrefs.GetInt("moneda", 0);
-            cantidadmonedas.text = cantidadM.ToString() + "monedas";
+            cantidadmonedas.text = cantidadM.ToString() ;
 
             cantidadL = PlayerPrefs.GetInt("llave", 0);
-            cantidadLlaves.text = cantidadL.ToString() + "llaves";
+            cantidadLlaves.text = cantidadL.ToString() ;
         }
         /*
         else if (tipoPantalla.Equals("juegoCompletado"))
@@ -113,6 +113,11 @@ public class gameOver : MonoBehaviour
         
 
     }
+    public void SalirJuego()
+    {
 
-    
+        Application.Quit();
+        print("juego cerrado");
+    }
+
 }

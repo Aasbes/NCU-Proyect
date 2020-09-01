@@ -21,27 +21,18 @@ EditorBuildSettings:
     path: Assets/Scenes/gameOver/pantallaJuegoCompletado.unity
     guid: 0901ea2f345105748b0f4ac036b87298
   - enabled: 1
-    path: Assets/Arturo/pantallasN2/nivel2-1.unity
-    guid: 851497548e6cac94286c945d64ef28e2
-  - enabled: 1
-    path: Assets/Arturo/pantallasN2/nivel2-2.unity
-    guid: 8194068f4bd251242a53b4163c8069ff
-  - enabled: 1
-    path: Assets/Arturo/pantallasN2/nivel2-3.unity
-    guid: daa10298e093fcf4187ab1a205d3e67a
-  - enabled: 1
-    path: Assets/Arturo/pantallasN2/nivel2-4.unity
-    guid: e32a9411882518240a7b4b412cd92f69
-  - enabled: 1
-    path: Assets/Arturo/pantallasN1/nivel1-1.unity
+    path: Assets/Arturo/pantallasN3/nivel3-1.unity
     guid: bc5a3804a95ffdc419e32744a2113fc0
   - enabled: 1
-    path: Assets/Arturo/pantallasN1/nivel1-2.unity
+    path: Assets/Arturo/pantallasN3/nivel3-2.unity
     guid: 93e3198653e154b47a5fb177db7aa458
   - enabled: 1
-    path: Assets/Arturo/pantallasN1/nivel1-3.unity
+    path: Assets/Arturo/pantallasN3/nivel3-3.unity
     guid: 3d22fc13616dec94caa259e2713149d1
   - enabled: 1
-    path: Assets/Arturo/pantallasN1/Nivel1-4.unity
+    path: Assets/Arturo/pantallasN3/Nivel3-4.unity
     guid: 7c3f65949c399144e84333aa7921f003
+  - enabled: 1
+    path: Assets/Arturo/pantallasN3/nivel3-5.unity
+    guid: 9a7858dc3d926654c81eb917691bc64c
   m_configObjects: {}

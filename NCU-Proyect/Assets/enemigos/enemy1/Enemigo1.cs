@@ -5,14 +5,17 @@ using UnityEngine;
 
 public class Enemigo1 : MonoBehaviour
 {
-
+    
     public float moveSpeed;
     public GameObject[] wayPoints;
     float Vida;
     int nextWaypoint = 0;
     float distToPoint;
     public SpriteRenderer sprit;
-
+    void Start()
+    {
+        
+    }
     void Update()
 
     {

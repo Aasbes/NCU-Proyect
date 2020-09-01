@@ -212,7 +212,7 @@ public class ControlJugador : MonoBehaviour
 
             Color color = new Color(255 / 255f, 106 / 255f, 0 / 255f);
             sprit.color = color;
-            rbd.AddForce(Vector2.up * 10, ForceMode2D.Impulse);
+            rbd.AddForce(Vector2.up * 2, ForceMode2D.Impulse);
 
 
             //barraVidaPersonaje.SendMessage("dañoRecibido", 15);
