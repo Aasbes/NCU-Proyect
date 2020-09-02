@@ -9,11 +9,12 @@ using TMPro;
 
 public class Menu : MonoBehaviour
 {
-    bool activo = false;
+    bool activo = false,activo2=false;
     bool coop;
     public bool canvasActivo = false;
     Canvas canvas;
     public GameObject configuracion;
+    public GameObject controles;
     //public GameObject cooperativo;
     //public TextMeshProUGUI cantJugadores;
 
@@ -25,7 +26,7 @@ public class Menu : MonoBehaviour
         canvas = GetComponent<Canvas>();
         canvas.enabled = canvasActivo;
         configuracion.SetActive(activo);
-       
+        controles.SetActive(activo2);
 
     }
 
@@ -77,6 +78,15 @@ public class Menu : MonoBehaviour
         configuracion.SetActive(activo);
         
     }
+    public void controlesJugadores()
+    {
+
+        activo2 = !activo2;
+        controles.SetActive(activo2);
+
+    }
+
+
 
     public void Volver()
     {

@@ -48,7 +48,10 @@ public class ControlIdioma : MonoBehaviour
 
         for(int i = 0; i < Text.Length; i++)
         {
+          
+            
             Text[i].text = textoIngles[i];
+            
 
         }
 
@@ -60,7 +63,10 @@ public class ControlIdioma : MonoBehaviour
 
         for (int i = 0; i < Text.Length; i++)
         {
+            
             Text[i].text = textoEspañol[i];
+           
+            
 
         }
 

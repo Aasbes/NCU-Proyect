@@ -8,10 +8,11 @@ public class Enemigo1 : MonoBehaviour
     
     public float moveSpeed;
     public GameObject[] wayPoints;
-    float Vida;
+   
     int nextWaypoint = 0;
     float distToPoint;
     public SpriteRenderer sprit;
+   
     void Start()
     {
         
@@ -76,9 +77,10 @@ public class Enemigo1 : MonoBehaviour
     public void OnCollisionEnter2D(Collision2D tocando)
     {
         
-        if(tocando.gameObject.tag=="disparoJugador" )
+        if(tocando.gameObject.tag=="Jugador" )
         {
             Vida = Vida - 45;
+            print(Vida);
         }
         
     }
