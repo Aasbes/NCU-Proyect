@@ -45,6 +45,11 @@ public class creditos : MonoBehaviour
     {
 
         Application.Quit();
+        PlayerPrefs.SetInt("carpeta", 0);
+        PlayerPrefs.SetInt("moneda", 0);
+        PlayerPrefs.SetInt("llave", 0);
+        PlayerPrefs.SetFloat("vida", 100);
+        PlayerPrefs.SetFloat("vida2", 100);
         print("juego cerrado");
     }
 }

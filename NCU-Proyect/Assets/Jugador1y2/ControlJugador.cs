@@ -216,7 +216,7 @@ public class ControlJugador : MonoBehaviour
 
 
             //barraVidaPersonaje.SendMessage("dañoRecibido", 15);
-            dañoRecibido(15);
+            dañoRecibido(10);
             ////////////////
             if (vida <= 0)
             {
@@ -251,7 +251,7 @@ public class ControlJugador : MonoBehaviour
         {
             pos.position = new Vector3(0, 0, 0);
             //barraVidaPersonaje.SendMessage("dañoRecibido", 25);
-            dañoRecibido(25);
+            dañoRecibido(20);
             //barraVidaPersonaje.SendMessage("dañoRecibido", 15);
             if (vida <= 0)
             {

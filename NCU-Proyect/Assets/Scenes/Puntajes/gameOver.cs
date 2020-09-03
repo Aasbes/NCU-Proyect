@@ -115,9 +115,28 @@ public class gameOver : MonoBehaviour
     }
     public void SalirJuego()
     {
-
+        PlayerPrefs.SetInt("carpeta", 0);
+        PlayerPrefs.SetInt("moneda", 0);
+        PlayerPrefs.SetInt("llave", 0);
+        PlayerPrefs.SetFloat("vida", 100);
+        PlayerPrefs.SetFloat("vida2", 100);
         Application.Quit();
         print("juego cerrado");
-    }
 
+
+        /*
+        PlayerPrefs.SetInt("TotalCarpeta", 0);
+        PlayerPrefs.SetInt("TotalMoneda", 0);
+        PlayerPrefs.SetInt("TotalLLave", 0);
+        */
+    }
+    /*
+    public void Creditos()
+    {
+        SceneManager.LoadScene("creditosFinales");
+        PlayerPrefs.SetInt("TotalCarpeta", 0);
+        PlayerPrefs.SetInt("TotalMoneda", 0);
+        PlayerPrefs.SetInt("TotalLLave", 0);
+    }
+    */
 }
