@@ -54,7 +54,7 @@ public class Contadorpuntaje : MonoBehaviour
 
         cantidadCarpetas.text = PlayerPrefs.GetInt("carpeta", 0).ToString();
         cantidadmonedas.text = PlayerPrefs.GetInt("moneda", 0).ToString();
-        cantidadLlaves.text = PlayerPrefs.GetInt("llave", 0).ToString() + " /5";
+        cantidadLlaves.text = PlayerPrefs.GetInt("llave", 0).ToString();
     }
 
     public void ChangeScore(int recolectado, string nombre,string jugador)
@@ -118,7 +118,7 @@ public class Contadorpuntaje : MonoBehaviour
                     {
                         cantidadL = PlayerPrefs.GetInt("llave", 0) + recolectado;
                         PlayerPrefs.SetInt("llave", cantidadL);
-                        cantidadLlaves.text = cantidadL.ToString() + " /5";
+                        cantidadLlaves.text = cantidadL.ToString();
                     }
                     
                 }

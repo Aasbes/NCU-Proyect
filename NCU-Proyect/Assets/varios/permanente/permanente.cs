@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class permanente : MonoBehaviour
 {
-    private AudioSource audioPlayer;
+
     public int count;
     public GameObject player;
     //bool activo = false;
@@ -112,10 +112,10 @@ public class permanente : MonoBehaviour
             SceneManager.LoadScene("gameover");
 
         }
-        if (PlayerPrefs.GetInt("llave", 0)==20)
+        if (PlayerPrefs.GetInt("llave", 0)>=20)
         {
             SceneManager.LoadScene("pantallaJuegoCompletado");
-            audioPlayer.Stop();
+           
         }
     }
         

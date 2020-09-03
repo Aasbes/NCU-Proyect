@@ -38264,8 +38264,8 @@ Transform:
   m_LocalPosition: {x: 73.782845, y: -5.3618026, z: 67.05778}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1633517097}
   - {fileID: 825235982}
+  - {fileID: 1633517097}
   - {fileID: 1594132317}
   - {fileID: 1526146311}
   - {fileID: 721725091}
@@ -38288,7 +38288,7 @@ PrefabInstance:
     - target: {fileID: 7080979494653207888, guid: b28c9b07867e02a4a9f343f1a6830718,
         type: 3}
       propertyPath: escenaSiguiente
-      value: menuInicial
+      value: nivel2-5
       objectReference: {fileID: 0}
     - target: {fileID: 7080979494653207890, guid: b28c9b07867e02a4a9f343f1a6830718,
         type: 3}
@@ -38328,7 +38328,7 @@ PrefabInstance:
     - target: {fileID: 7080979494653207890, guid: b28c9b07867e02a4a9f343f1a6830718,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7080979494653207890, guid: b28c9b07867e02a4a9f343f1a6830718,
         type: 3}
@@ -39622,7 +39622,7 @@ PrefabInstance:
     - target: {fileID: 5728084976557731267, guid: 932b44eb2c994ca4c8bf73b8a3197ae5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5728084976557731267, guid: 932b44eb2c994ca4c8bf73b8a3197ae5,
         type: 3}
@@ -39664,7 +39664,7 @@ Transform:
   m_LocalScale: {x: 8.772259, y: 10.0221615, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1866704216881135931
 SpriteRenderer:

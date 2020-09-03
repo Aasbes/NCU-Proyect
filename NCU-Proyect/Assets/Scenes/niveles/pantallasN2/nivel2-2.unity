@@ -4616,8 +4616,8 @@ Transform:
   m_LocalPosition: {x: 100.643745, y: 16.955198, z: 69.19859}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1356542436}
   - {fileID: 1240217840}
+  - {fileID: 1356542436}
   - {fileID: 1116831574}
   - {fileID: 1332219710}
   - {fileID: 1810354546}
@@ -5428,7 +5428,7 @@ PrefabInstance:
     - target: {fileID: 7080979494653207890, guid: b28c9b07867e02a4a9f343f1a6830718,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7080979494653207890, guid: b28c9b07867e02a4a9f343f1a6830718,
         type: 3}
@@ -5578,7 +5578,7 @@ PrefabInstance:
     - target: {fileID: 4406306380316207961, guid: 79d561ff8feba53488283a3f50c79e21,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4406306380316207961, guid: 79d561ff8feba53488283a3f50c79e21,
         type: 3}
@@ -12726,7 +12726,7 @@ Transform:
   m_LocalScale: {x: 5.649782, y: 3.2915533, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1335315083892535637
 SpriteRenderer:

@@ -20246,7 +20246,7 @@ PrefabInstance:
     - target: {fileID: 7080979494653207888, guid: b28c9b07867e02a4a9f343f1a6830718,
         type: 3}
       propertyPath: escenaSiguiente
-      value: nivel3-4
+      value: nivel1-4
       objectReference: {fileID: 0}
     - target: {fileID: 7080979494653207890, guid: b28c9b07867e02a4a9f343f1a6830718,
         type: 3}
