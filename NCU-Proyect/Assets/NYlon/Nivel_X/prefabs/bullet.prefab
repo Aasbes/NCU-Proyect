@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7908909967025009430
+--- !u!1 &4708262867759703644
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,40 +8,39 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7908909967025009518}
-  - component: {fileID: 7908909967025009425}
-  - component: {fileID: 7908909967025009424}
-  - component: {fileID: 7908909967025009427}
-  - component: {fileID: 7908909967025009429}
-  - component: {fileID: 7908909967025009431}
-  m_Layer: 0
-  m_Name: proyectilTorreta
-  m_TagString: enemigo
+  - component: {fileID: 8120691703342771749}
+  - component: {fileID: 5618955863644048691}
+  - component: {fileID: 449125600341450686}
+  - component: {fileID: 204166590656396946}
+  - component: {fileID: 242030593}
+  m_Layer: 8
+  m_Name: bullet
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7908909967025009518
+--- !u!4 &8120691703342771749
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7908909967025009430}
+  m_GameObject: {fileID: 4708262867759703644}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.139375, y: 3.3827305, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.26, y: -0.18, z: 0}
+  m_LocalScale: {x: 0.65508074, y: 0.65691847, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &7908909967025009425
+--- !u!212 &5618955863644048691
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7908909967025009430}
+  m_GameObject: {fileID: 4708262867759703644}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -72,97 +71,89 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1055138309
-  m_SortingLayer: 1
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 3368890337778796465, guid: aaa395c6bb51fad41a0260c7492b34f2,
-    type: 3}
-  m_Color: {r: 1, g: 0, b: 0.782711, a: 1}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 2eefe2f869058254f9d562264276d143, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.61, y: 1.78}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &7908909967025009424
-CircleCollider2D:
+--- !u!60 &449125600341450686
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7908909967025009430}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.009368419, y: 0.0000000011168024}
-  serializedVersion: 2
-  m_Radius: 0.24235862
---- !u!50 &7908909967025009427
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7908909967025009430}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 6
---- !u!61 &7908909967025009429
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7908909967025009430}
+  m_GameObject: {fileID: 4708262867759703644}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.009016991, y: 0.11722469}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.5, y: 1.5}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 2.61, y: 1.78}
+    newSize: {x: 2.61, y: 1.78}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.8737583, y: 0.7655506}
-  m_EdgeRadius: 0
---- !u!114 &7908909967025009431
+  m_Points:
+    m_Paths:
+    - - {x: -0.185, y: 0.35}
+      - {x: -0.205, y: 0.32999998}
+      - {x: -0.715, y: 0.22999999}
+      - {x: -1.0649999, y: 0.089999996}
+      - {x: -1.0749999, y: 0.06}
+      - {x: -1.0749999, y: -0.12}
+      - {x: -0.375, y: -0.34}
+      - {x: 0.765, y: -0.34}
+      - {x: 0.775, y: -0.29}
+      - {x: 0.775, y: 0.29999998}
+      - {x: 0.675, y: 0.35}
+--- !u!50 &204166590656396946
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4708262867759703644}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!114 &242030593
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7908909967025009430}
+  m_GameObject: {fileID: 4708262867759703644}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e0c2182477f2d441b50c2840c548ea4, type: 3}
+  m_Script: {fileID: 11500000, guid: acba51e29a117d84992640a0ac64d3f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pos: {fileID: 7908909967025009518}
-  velocidad: 25
-  duracion: 2
-  tipo: torreta
+  bulletSpeed: 0
+  bulletLife: 0
+  enemigoTrans: {fileID: 0}

@@ -112,7 +112,7 @@ public class permanente : MonoBehaviour
             SceneManager.LoadScene("gameover");
 
         }
-        if (PlayerPrefs.GetInt("llave", 0)>=20)
+        if (PlayerPrefs.GetInt("llave", 0)>=14)
         {
             SceneManager.LoadScene("pantallaJuegoCompletado");
            

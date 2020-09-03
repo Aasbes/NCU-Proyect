@@ -9,7 +9,7 @@ public class ProyectilEnemigo : MonoBehaviour
     private Rigidbody2D rbd;
     public float velocidad;
     public float duracion;//duracion objeto en pantalla
-
+   
     // Start is called before the first frame update
 
     void Awake()
@@ -29,7 +29,7 @@ public class ProyectilEnemigo : MonoBehaviour
     void Start()
     {
         //rbd.velocity = new Vector3(velocidad, rbd.velocity.y,0);
-        
+       
         if (torreta.direccion)
         {
             rbd.velocity = new Vector3(velocidad, rbd.velocity.y, 0);

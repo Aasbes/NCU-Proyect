@@ -53,4 +53,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/niveles/pantallasN2/nivel2-5.unity
     guid: d21cd783236ba93479c4aa1ab6d4cbbc
+  - enabled: 1
+    path: Assets/Scenes/niveles/nivelX/nivelx-1.unity
+    guid: 7c60125645ae0d848ade945d5462c469
+  - enabled: 1
+    path: Assets/Scenes/niveles/nivelX/nivelx-2.unity
+    guid: 6b7359c4439c5664a8cced373e003176
+  - enabled: 1
+    path: Assets/Scenes/niveles/nivelX/nivelx-3.unity
+    guid: 84fac5d3c20cbee48b75377808cf3662
+  - enabled: 1
+    path: Assets/Scenes/niveles/nivelX/nivelx-4.unity
+    guid: c3a3de8fef0d1e84bae2a49a974f1bd8
   m_configObjects: {}

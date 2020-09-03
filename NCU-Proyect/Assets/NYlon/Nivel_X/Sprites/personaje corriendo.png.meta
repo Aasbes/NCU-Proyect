@@ -1,0 +1,367 @@
+fileFormatVersion: 2
+guid: 6c3b13b1921c1d24383cc395afdc6c15
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1900801666170613419
+    second: personaje corriendo_0
+  - first:
+      213: 7889220233929105322
+    second: personaje corriendo_1
+  - first:
+      213: 8067090361334484780
+    second: personaje corriendo_2
+  - first:
+      213: -7449466370221408296
+    second: personaje corriendo_3
+  - first:
+      213: -4955642725024113445
+    second: personaje corriendo_4
+  - first:
+      213: -5160599980004363204
+    second: personaje corriendo_5
+  - first:
+      213: 6253053245710638335
+    second: personaje corriendo_6
+  - first:
+      213: -8514164309608316554
+    second: personaje corriendo_7
+  - first:
+      213: -6075622133266258429
+    second: personaje corriendo_8
+  - first:
+      213: 3641311397068798057
+    second: personaje corriendo_9
+  - first:
+      213: 6792623134593201184
+    second: personaje corriendo_10
+  - first:
+      213: 9023139506200121347
+    second: personaje corriendo_11
+  - first:
+      213: 4722902005950857386
+    second: personaje corriendo_12
+  - first:
+      213: 5459541503219370894
+    second: personaje corriendo_13
+  - first:
+      213: 1063169633148992770
+    second: personaje corriendo_14
+  - first:
+      213: 8490738431062971084
+    second: personaje corriendo_15
+  - first:
+      213: 1726263648687543235
+    second: personaje corriendo_16
+  - first:
+      213: 6463237069510481633
+    second: personaje corriendo_17
+  - first:
+      213: -3830285817564981826
+    second: personaje corriendo_18
+  - first:
+      213: -8636953124794626358
+    second: personaje corriendo_19
+  - first:
+      213: 719194512361466234
+    second: personaje corriendo_20
+  - first:
+      213: 4577789913156529355
+    second: personaje corriendo_21
+  - first:
+      213: -3108156762573368904
+    second: personaje corriendo_22
+  - first:
+      213: -3102423503459027449
+    second: personaje corriendo_23
+  - first:
+      213: -6704663164486055974
+    second: personaje corriendo_24
+  - first:
+      213: -1058310217181492897
+    second: personaje corriendo_25
+  - first:
+      213: -5416431732106034754
+    second: personaje corriendo_26
+  - first:
+      213: 2106636295175393869
+    second: personaje corriendo_27
+  - first:
+      213: 6497775323460905789
+    second: personaje corriendo_28
+  - first:
+      213: 8356387731763396344
+    second: personaje corriendo_29
+  - first:
+      213: 6221880250326982999
+    second: personaje corriendo_30
+  - first:
+      213: 8742853435857650644
+    second: personaje corriendo_31
+  - first:
+      213: -2586048506886356645
+    second: personaje corriendo_32
+  - first:
+      213: 3008442350853193739
+    second: personaje corriendo_33
+  - first:
+      213: -5159141086946117419
+    second: personaje corriendo_34
+  - first:
+      213: -4052948038677090207
+    second: personaje corriendo_35
+  - first:
+      213: -6490893660754337782
+    second: personaje corriendo_36
+  - first:
+      213: -4986212645798933572
+    second: personaje corriendo_37
+  - first:
+      213: 7445750194798772688
+    second: personaje corriendo_38
+  - first:
+      213: 3045434424126670033
+    second: personaje corriendo_39
+  - first:
+      213: -5452946905960862640
+    second: personaje corriendo_40
+  - first:
+      213: -1326832513408451944
+    second: personaje corriendo_41
+  - first:
+      213: 4642710566746973051
+    second: personaje corriendo_42
+  - first:
+      213: 1158086143722955189
+    second: personaje corriendo_43
+  - first:
+      213: 3424128788095093279
+    second: personaje corriendo_44
+  - first:
+      213: -5303301254658844672
+    second: personaje corriendo_45
+  - first:
+      213: 9107714789144719092
+    second: personaje corriendo_46
+  - first:
+      213: -604504993849622593
+    second: personaje corriendo_47
+  - first:
+      213: 1562363366985357308
+    second: personaje corriendo_48
+  - first:
+      213: 8606334692850889560
+    second: personaje corriendo_49
+  - first:
+      213: -5065506029836008564
+    second: personaje corriendo_50
+  - first:
+      213: 8555552481871254182
+    second: personaje corriendo_51
+  - first:
+      213: -4064208939399042519
+    second: personaje corriendo_52
+  - first:
+      213: 5870350795675299218
+    second: personaje corriendo_53
+  - first:
+      213: 1427813991252659526
+    second: personaje corriendo_54
+  - first:
+      213: -8120454548801676021
+    second: personaje corriendo_55
+  - first:
+      213: 8664140727238186503
+    second: personaje corriendo_56
+  - first:
+      213: 4880140238363468914
+    second: personaje corriendo_57
+  - first:
+      213: -2614316874870768316
+    second: personaje corriendo_58
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: personaje corriendo_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 250
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5511e6b94fefe95e0800000000000000
+      internalID: -1900801666170613419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personaje corriendo_1
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 6
+        width: 297
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 9, y: 20, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaf1b2ef0042c7d60800000000000000
+      internalID: 7889220233929105322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personaje corriendo_2
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 0
+        width: 192
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2fc15e31ff04ff60800000000000000
+      internalID: 8067090361334484780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personaje corriendo_3
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 26
+        width: 250
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dffbb42ecd2e9890800000000000000
+      internalID: -7449466370221408296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
